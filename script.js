@@ -1,16 +1,25 @@
-    let name = prompt("Ismingizni kiriting:");
+    let nam = prompt("Ismingizni kiriting:");
     let age = prompt("Yoshingizni kiriting:");
     let job = prompt("Kasbingizni kiriting:");
-    let format = prompt("Matnni qanday chiqaraylik?\n1 - BARCHA HARFLAR KATTA\n2 - barcha harflar kichik");
+    let text = prompt("Turar Joyni yozing:");
+
+    let format = prompt("Qanday holatda chiqsin ?\n1 - Kotta harflar\n2 - Kichkina harflar");
 
     if (format === "1") {
+      nam = nam.toUpperCase();
+      age = age.toUpperCase();      
+      job = job.toUpperCase();
       text = text.toUpperCase();
     } else if (format === "2") {
+      nam = nam.toLowerCase();
+      age = age.toLowerCase();
+      job = job.toLowerCase();
       text = text.toLowerCase();
     } else {
-      alert("Noto'g'ri tanlov! Matn o'zgartirilmaydi.");
+      alert("Noto'g'ri tanlov! Oddiy holatda chiqariladi.");
     }
 
-    document.getElementById("nameOutput").innerHTML = "Ism: " + name;
+    document.getElementById("nameOutput").innerHTML = "Ism: " + nam;
     document.getElementById("ageOutput").innerHTML = "Yosh: " + age;
     document.getElementById("jobOutput").innerHTML = "Kasb: " + job;
+    document.getElementById("textOutput").innerHTML = "Yozuv: " + text;
