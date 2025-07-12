@@ -1,0 +1,10 @@
+    .output {
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    #nameOutput { background-color: #3498db; font-size: 20px; }
+    #ageOutput { background-color: #2ecc71; font-size: 18px; }
+    #jobOutput { background-color: #9b59b6; font-size: 18px; }
